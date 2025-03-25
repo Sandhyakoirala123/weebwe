@@ -1,0 +1,158 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #b2f0d8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Sign-in Container */
+.signin-container {
+    display: flex;
+    width: 900px;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Section - Gradient with Blur */
+.signin-left {
+    flex: 1;
+    background: linear-gradient(to bottom right, rgba(0, 150, 136, 0.9), rgba(33, 150, 243, 0.9)), url('your-image-path.jpg');
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.signin-left h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.signin-left p {
+    font-size: 14px;
+    max-width: 300px;
+}
+
+.signin-left a {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: 500;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+/* Right Section - Form */
+.signin-right {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signin-right h1 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #28a745;
+}
+
+/* Sign-in Button */
+button {
+    width: 100%;
+    background: #28a745;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #218838;
+}
+
+/* Google Sign-in */
+.google-signin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.google-signin:hover {
+    background: #f7f7f7;
+}
+
+/* Register Link */
+p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+p a {
+    color: #28a745;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .signin-container {
+        flex-direction: column;
+    }
+    .signin-left {
+        display: none;
+    }
+}

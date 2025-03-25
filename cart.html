@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/cart.css">
+    <title>Your Shopping Cart</title>
+</head>
+
+<body>
+
+    <div class="cart-container">
+        <div class="cart-products">
+            <h1>Your Bag</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Products</th>
+                        <th>Description</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <!-- Items will be loaded here via JS -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+            <p id="product-count">0 Products: 0€</p>
+            <p>Shipping: 5€</p>
+            <div class="total-box">
+                <span>Total</span>
+                <span id="cart-total">5€</span>
+            </div>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <script src="./assets/js/cart.js"></script>
+</body>
+</html>

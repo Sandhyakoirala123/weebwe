@@ -1,0 +1,25 @@
+/* Wishlist Button Badge */
+.btn-badge {
+    background-color: #e63946;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 0.8em;
+    font-weight: bold;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+
+/* Wishlist heart icon styling */
+.wishlist-icon ion-icon {
+    font-size: 1.5rem;
+    color: #aaa;
+    transition: color 0.3s ease;
+}
+
+.wishlist-icon.active ion-icon {
+    color: #e63946;
+}
+
+
